@@ -12,7 +12,6 @@ apt-get update
 apt-get install docker-ce docker-ce-cli containerd.io docker-compose
 systemctl enable docker
 systemctl start docker
-# usermod -aG docker ubuntu
 
 # run jenkins-docker-network
 mkdir -p jenkins_home
@@ -24,7 +23,5 @@ wget https://raw.githubusercontent.com/qubilea-sadinmaki/jenkins-docker-network/
 docker-compose up -d
 
 # show endpoint
-echo 'Jenkins installed'
+echo 'Jenkins-Docker-network running'
 echo 'You should now be able to access jenkins at: http://'$(curl -s ifconfig.co)':8080'
-echo 'Jenkins initial password below'
-echo | cat jenkins_home/secrets/initialAdminPassword
