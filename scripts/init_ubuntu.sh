@@ -9,7 +9,7 @@ sudo add-apt-repository \
    $(lsb_release -cs) \
    stable"
 apt-get update
-apt-get install docker-ce docker-ce-cli containerd.io docker-compose
+apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose
 systemctl enable docker
 systemctl start docker
 
