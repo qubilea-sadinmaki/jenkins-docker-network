@@ -6,13 +6,13 @@
 sudo apt-get update
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
-sudo usermod -aG docker ubuntu
+# sudo usermod -aG docker ubuntu
 sudo apt install -y docker-compose
 
 # run jenkins-docker-network
-mkdir -p jenkins_home
-chown -R 1000:1000 jenkins_home/
-mkdir -p jenkins
+sudo mkdir -p jenkins_home
+sudo chown -R 1000:1000 jenkins_home/
+sudo mkdir -p jenkins
 wget https://raw.githubusercontent.com/qubilea-sadinmaki/jenkins-docker-network/main/jenkins/Dockerfile
 mv Dockerfile jenkins
 wget https://raw.githubusercontent.com/qubilea-sadinmaki/jenkins-docker-network/main/docker-compose.yml
