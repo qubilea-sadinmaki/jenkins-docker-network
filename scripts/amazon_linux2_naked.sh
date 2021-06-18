@@ -19,3 +19,8 @@ sudo yum upgrade
 sudo yum install jenkins java-1.8.0-openjdk-devel -y
 sudo systemctl daemon-reload
 sudo systemctl start jenkins
+sudo usermod -a -G docker jenkins
+sudo chmod 777 /var/run/docker.sock
+
+# show endpoint
+echo 'Log out and back in to use Jenkins with Docker pipeline plugin'
