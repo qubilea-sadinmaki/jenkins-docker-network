@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# this script is only tested on Ubuntu 18.04 (LTS) x64
+# this script is only tested on Amazon Linux 2 x86_64
 # login: ssh -i /pathto/keypair.pem ec2-user@ec2-xx-xxx-xxx-xxx.eu-central-1.compute.amazonaws.com
 # wget https://raw.githubusercontent.com/qubilea-sadinmaki/jenkins-docker-network/main/scripts/amazon_linux2.sh
 # sh amazon_linux2.sh
